@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: order-api
+  jpa:
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://localhost:3307/orderdb
+    password: password
+    username: appuser
+server:
+  port: 8083
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8080/eureka/
