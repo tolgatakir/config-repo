@@ -10,6 +10,12 @@ spring:
     url: jdbc:mysql://localhost:3306/restaurantdb
     password: password
     username: appuser
+  cloud:
+    config:
+      fast-fail: true
+    retry:
+      max-attempts: 10000
+      max-interval: 1000
 server:
   port: 8081
 eureka:
