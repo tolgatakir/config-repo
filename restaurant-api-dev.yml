@@ -8,8 +8,8 @@ spring:
     show-sql: true
   datasource:
     url: jdbc:mysql://db:3306/restaurantdb?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false&allowPublicKeyRetrieval=true
-    password: dbuser
-    username: dbpass
+    username: dbuser
+    password: dbpass
     
 server:
   port: 8081
