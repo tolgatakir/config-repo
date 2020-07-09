@@ -10,6 +10,9 @@ spring:
     url: jdbc:mysql://restaurantdb:3306/restaurantdb?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false&allowPublicKeyRetrieval=true
     password: restaurantdPassword
     username: restaurantdbUser
+  cloud:
+    config:
+      uri: http://config-server:8888
 server:
   port: 8081
 eureka:
