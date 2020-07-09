@@ -7,12 +7,14 @@ spring:
     generate-ddl: true
     show-sql: true
   datasource:
-    url: jdbc:mysql://localhost:3308/paymentdb
-    password: password
-    username: appuser
+    url: jdbc:mysql://paymentdb:3307/paymentdb?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false&allowPublicKeyRetrieval=true
+    password: paymentdbPassword
+    username: paymentdbUser
+    
 server:
   port: 8082
+
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8080/eureka/
+      defaultZone: http://eureka-server:8761/eureka/
